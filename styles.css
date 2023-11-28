@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 0 10px;
+  width: calc(50% - 20px);
+}
+
+h2 {
+  color: #333;
+}
+
+.preview-container, .output-container {
+  border: 1px solid #ddd;
+  margin-top: 15px;
+  min-height: 200px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Additional styling can be added as needed */

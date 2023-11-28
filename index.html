@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload and Preview Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="section input-section">
+        <h2>Input</h2>
+        <input type="file" id="imageUpload" accept="image/*">
+        <div id="previewContainer" class="preview-container">
+            <!-- Image Preview will be displayed here -->
+        </div>
+        <button id="resetButton">Reset</button>
+        <button id="runButton">Run</button>
+    </div>
+
+    <div class="section output-section">
+        <h2>Output</h2>
+        <div id="outputContainer" class="output-container">
+            <!-- Processed Image will be displayed here -->
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
