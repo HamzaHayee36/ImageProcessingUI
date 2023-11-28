@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Upload and Preview Interface</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Processing UI</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="container">
-    <div class="section input-section">
-        <h2>Input</h2>
-        <input type="file" id="imageUpload" accept="image/*">
-        <div id="previewContainer" class="preview-container">
-            <!-- Image Preview will be displayed here -->
-        </div>
-        <button id="resetButton">Reset</button>
-        <button id="runButton">Run</button>
+  <div class="image-section" id="input-section">
+    <h2>Input</h2>
+    <img id="input-image">
+    <input type="file" id="image-upload" />
+  </div>
+  <div class="image-section" id="output-section">
+    <h2>Output</h2>
+    <img id="output-image">
+    <div class="buttons">
+      <button id="share-btn">Share</button>
+      <button id="tweak-btn">Tweak it</button>
+      <button id="download-btn">Download</button>
+      <button id="report-btn">Report</button>
     </div>
-
-    <div class="section output-section">
-        <h2>Output</h2>
-        <div id="outputContainer" class="output-container">
-            <!-- Processed Image will be displayed here -->
-        </div>
-    </div>
+  </div>
 </div>
 
-<script src="script.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
