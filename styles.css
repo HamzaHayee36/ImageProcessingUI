@@ -41,8 +41,8 @@ body {
   padding: 10px;
   text-align: center;
   width: 80%;
-  height: 150px;
-  margin: 20px auto;
+  height: 300px;
+  /* margin: 20px auto; */
   display: flex; /* Use flexbox for alignment */
   flex-direction: column; /* Stack children vertically */
   align-items: center; /* Center children horizontally */
@@ -53,6 +53,10 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 5px; /* Space between label and file input */
+  display: inline-block; /* Make label inline for better alignment */
+  background-color: #f0f0f0; /* Optional: background color for the label */
+  padding: 5px 10px; /* Optional: padding for the label */
+  border: 1px solid #ddd; /* Optional: border for the label */
 }
 
 .action-buttons, #input-section input[type="file"] {
