@@ -9,14 +9,15 @@
 <body>
 
 <div class="container">
-    <div class="section image-input-section" id="input-section">
-        <h2>Input</h2>
-        <div class="upload-box">
-            <label for="image-upload" class="upload-label">Upload</label>
-            <input type="file" id="image-upload" style="display: none;"/>
-            <img id="input-preview-image" style="display: none;"> <!-- Image will be displayed here -->
-        </div>
+  <div class="section image-input-section" id="input-section">
+    <h2>Input</h2>
+    <div class="upload-box">
+        <label for="image-upload" class="upload-label">Upload</label>
+        <input type="file" id="image-upload" style="display: none;"/>
+        <img id="input-preview-image" style="display: none;">
     </div>
+    <div id="file-name"></div> <!-- Display the uploaded file name here -->
+  </div>
     <div class="section image-output-section" id="output-section">
         <h3>Output</h3>
         <img id="output-preview-image">
