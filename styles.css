@@ -19,7 +19,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align items to the start */
+  justify-content: flex-start;
   align-items: center;
   position: relative;
 }
@@ -33,7 +33,7 @@ body {
   max-width: 70%;
   max-height: 70%;
   object-fit: contain;
-  margin-top: 15px; /* Slightly reduced space */
+  margin-top: 15px;
 }
 
 .upload-box {
@@ -47,8 +47,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent); /* Diagonal lines pattern */
-  background-size: 20px 20px; /* Size of the pattern */
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
+  background-size: 20px 20px;
+  position: relative;
 }
 
 .upload-label {
@@ -56,12 +57,11 @@ body {
   cursor: pointer;
   margin-bottom: 5px;
   display: inline-block;
-  background-color: #fff; /* Solid background color for label */
+  background-color: #fff;
   padding: 5px 10px;
   border: 1px solid #ddd;
-  z-index: 1; /* Make sure the label is above the lines */
+  z-index: 1;
 }
-
 
 .action-buttons, #input-section input[type="file"] {
   position: absolute;
