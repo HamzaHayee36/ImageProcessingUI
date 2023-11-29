@@ -1,157 +1,161 @@
 /* Base styles for the page */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-image: url('pic1.avif'); /* Add your image path here */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  font-family: Arial, sans-serif; /* Setting the default font to Arial */
+  margin: 0; /* Removing default margin */
+  padding: 0; /* Removing default padding */
+  overflow: hidden; /* Hiding any overflow */
+  background-image: url('pic1.avif'); /* Background image for the entire page */
+  background-size: cover; /* Ensuring the background image covers the entire area */
+  background-position: center; /* Centering the background image */
+  background-repeat: no-repeat; /* Preventing the background image from repeating */
 }
 
-/* Flex container to hold the input and output sections */
+/* Container for input and output sections with flex layout */
 .container {
-  display: flex;
-  margin: 20px;
-  height: calc(100vh - 40px);
-  overflow: hidden;
+  display: flex; /* Using flexbox for layout */
+  margin: 20px; /* Margin around the container */
+  height: calc(100vh - 40px); /* Calculating height based on viewport height minus margin */
+  overflow: hidden; /* Hiding overflow */
 }
 
-/* Styles for both input and output sections */
+/* Styling for input and output sections */
 .section {
-  flex: 1;
-  border: 2px solid #ddd;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
+  flex: 1; /* Flex property to take equal width */
+  border: 2px solid #ddd; /* Border for section */
+  padding: 10px; /* Padding inside sections */
+  text-align: center; /* Centering text inside sections */
+  display: flex; /* Using flexbox */
+  flex-direction: column; /* Aligning children in a column */
+  justify-content: flex-start; /* Aligning children to the start of the flex container */
+  align-items: center; /* Centering items horizontally */
+  position: relative; /* Setting position relative for absolute child positioning */
 }
 
-/* Container for the input label at the top */
+/* Styling for the input label container */
 .Input-label {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin-top: 40px;
-  margin-bottom: 40px; /* Space below the .Input-label */
+  display: flex; /* Using flexbox */
+  justify-content: space-between; /* Spacing items evenly */
+  width: 80%; /* Width relative to its container */
+  margin-top: 40px; /* Top margin */
+  margin-bottom: 40px; /* Bottom margin */
 }
 
+/* Styling for buttons inside the input label */
 .Input-label button {
-  flex: 1;
-  background-color: black;
-  color: white;
-  font-weight: 800;
-  font-size: 1.2em;
+  flex: 1; /* Each button takes equal space */
+  background-color: black; /* Black background color */
+  color: white; /* White text color */
+  font-weight: 800; /* Bold font weight */
+  font-size: 1.2em; /* Slightly larger font size */
 }
 
+/* Similar styling for output label as input label */
 .Output-label {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin-top: 40px;
-  margin-bottom: 40px; /* Space below the .Output-label */
+  display: flex; /* Using flexbox */
+  justify-content: space-between; /* Spacing items evenly */
+  width: 80%; /* Width relative to its container */
+  margin-top: 40px; /* Top margin */
+  margin-bottom: 40px; /* Bottom margin */
 }
 
+/* Styling for buttons inside the output label */
 .Output-label button {
-  flex: 1;
-  background-color: black;
-  color: white;
-  font-weight: 800;
-  font-size: 1.2em;
+  flex: 1; /* Each button takes equal space */
+  background-color: black; /* Black background color */
+  color: white; /* White text color */
+  font-weight: 800; /* Bold font weight */
+  font-size: 1.2em; /* Slightly larger font size */
 }
-
 
 /* Container for upload box and file name display */
 .upload-container {
-  text-align: center;
-  width: 80%;
-  margin: 10px auto; /* Adjusted margin for spacing */
+  text-align: center; /* Center aligning text */
+  width: 80%; /* Setting width */
+  margin: 10px auto; /* Centered margin */
 }
 
 /* Styles for the upload box */
 .upload-box {
-  border: 1px solid #ddd;
-  padding: 10px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+  border: 1px solid #ddd; /* Border for upload box */
+  padding: 10px; /* Padding inside the box */
+  height: 300px; /* Fixed height */
+  display: flex; /* Using flexbox */
+  flex-direction: column; /* Children in a column */
+  align-items: center; /* Center aligning items */
+  justify-content: center; /* Center justifying items */
+  position: relative; /* Relative position for positioning children */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
 }
 
 /* Styling for the upload label */
 .upload-label {
-  cursor: pointer;
-  margin-bottom: 5px;
-  display: inline-block;
-  padding: 5px 10px;
-  border: 1px solid #ddd;
-  z-index: 1;
-  background-color: black;
-  color: white;
-  font-weight: 800;
-  font-size: 1.2em;
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  margin-bottom: 5px; /* Bottom margin */
+  display: inline-block; /* Inline block display */
+  padding: 5px 10px; /* Padding inside the label */
+  border: 1px solid #ddd; /* Border around the label */
+  z-index: 1; /* Z-index for stacking order */
+  background-color: black; /* Black background color */
+  color: white; /* White text color */
+  font-weight: 800; /* Bold font weight */
+  font-size: 1.2em; /* Slightly larger font size */
 }
 
 /* Styles for displaying the file name */
 #file-name {
-  text-align: left; /* Aligns the file name to the left */
-  margin-top: 5px; /* Space below the upload box */
+  text-align: left; /* Aligning text to the left */
+  margin-top: 5px; /* Top margin */
 }
 
-/* Styles for the input section buttons */
+/* Styles for buttons in the input section */
 .input-buttons {
-  display: flex;
-  justify-content: space-between; /* Aligns buttons to the left and right */
-  width: 80%; /* Matches the width of the upload-container */
-  margin: 10px auto; /* Spacing above the buttons */
+  display: flex; /* Using flexbox */
+  justify-content: space-between; /* Spacing items evenly */
+  width: 80%; /* Width relative to its container */
+  margin: 10px auto; /* Centered margin */
 }
 
+/* Individual button styles in the input section */
 .input-buttons button {
   flex: 1; /* Each button takes equal space */
-  margin: 0 5px; /* Spacing between buttons */
-  background-color: black;
-  color: white;
-  font-weight: 800;
-  font-size: 1.2em;
+  margin: 0 5px; /* Margin between buttons */
+  background-color: black; /* Black background color */
+  color: white; /* White text color */
+  font-weight: 800; /* Bold font weight */
+  font-size: 1.2em; /* Slightly larger font size */
 }
 
-/* Styles for image preview in input and output sections */
+/* Styles for image preview in both input and output sections */
 #input-preview-image, #output-preview-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  max-width: 100%; /* Maximum width */
+  max-height: 100%; /* Maximum height */
+  object-fit: contain; /* Fit the object without distortion */
 }
 
 /* Styles for action buttons in the output section */
 .output-buttons {
-  display: flex;
-  justify-content: space-between; /* Aligns buttons to the left and right */
-  width: 80%; /* Matches the width of the upload-container */
-  margin: 10px auto; /* Spacing above the buttons */
-  position: absolute; /* Ensuring position is maintained */
-  bottom: 20px; /* Position at the bottom */
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex; /* Using flexbox */
+  justify-content: space-between; /* Spacing items evenly */
+  width: 80%; /* Width relative to its container */
+  margin: 10px auto; /* Centered margin */
+  position: absolute; /* Absolute position */
+  bottom: 20px; /* Position from the bottom */
+  left: 50%; /* Position from the left */
+  transform: translateX(-50%); /* Centering horizontally */
 }
 
+/* General button styling */
 .output-buttons button {
   flex: 1; /* Each button takes equal space */
-  margin: 0 5px; /* Spacing between buttons */
-  background-color: black;
-  color: white;
-  font-weight: 800;
-  font-size: 1.2em;
+  margin: 0 5px; /* Margin between buttons */
+  background-color: black; /* Black background color */
+  color: white; /* White text color */
+  font-weight: 800; /* Bold font weight */
+  font-size: 1.2em; /* Slightly larger font size */
 }
 
-/* Button styling */
+/* General button styling */
 button {
-  padding: 5px 10px;
-  margin: 0 5px;
+  padding: 5px 10px; /* Padding inside buttons */
+  margin: 0 5px; /* Margin around buttons */
 }
