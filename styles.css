@@ -4,6 +4,10 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-image: url('pic1.avif'); /* Add your image path here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Flex container to hold the input and output sections */
@@ -12,12 +16,13 @@ body {
   margin: 20px;
   height: calc(100vh - 40px);
   overflow: hidden;
+
 }
 
 /* Styles for both input and output sections */
 .section {
   flex: 1;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   padding: 10px;
   text-align: center;
   display: flex;
@@ -30,7 +35,11 @@ body {
 /* Styling for section headings */
 .section h2, .section h3 {
   margin-top: 10px;
-  font-size: 1.5em;
+  font-size: 2.5em;
+  color: white; /* White text color for h2 and h3 */
+  font-weight: 800; /* Increase font weight for a bolder appearance */
+  font-family: "Your Bold Font", Arial, sans-serif; /* Specify a bold font */
+
 }
 
 /* Container for upload box and file name display */
@@ -50,18 +59,22 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+
 }
 
 /* Styling for the upload label */
 .upload-label {
-  font-weight: bold;
   cursor: pointer;
   margin-bottom: 5px;
   display: inline-block;
-  background-color: #fff;
   padding: 5px 10px;
   border: 1px solid #ddd;
   z-index: 1;
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  font-size: 1.2em;
 }
 
 /* Styles for displaying the file name */
@@ -76,11 +89,17 @@ body {
   justify-content: space-between; /* Aligns buttons to the left and right */
   width: 80%; /* Matches the width of the upload-container */
   margin: 10px auto; /* Spacing above the buttons */
+
 }
 
 .input-buttons button {
   flex: 1; /* Each button takes equal space */
   margin: 0 5px; /* Spacing between buttons */
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  font-size: 1.2em;
+
 }
 
 /* Styles for image preview in input and output sections */
@@ -105,6 +124,11 @@ body {
 .output-buttons button {
   flex: 1; /* Each button takes equal space */
   margin: 0 5px; /* Spacing between buttons */
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  font-size: 1.2em;
+
 }
 
 /* Button styling */
