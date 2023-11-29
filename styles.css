@@ -78,7 +78,7 @@ body {
 }
 
 /* Styles for action buttons in the output section */
-.action-buttons, #input-section input[type="file"] {
+.output-buttons, #input-section input[type="file"] {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -91,4 +91,17 @@ body {
 button {
   padding: 5px 10px;
   margin: 0 5px;
+}
+
+/* Styles for the input section buttons */
+.input-buttons {
+  display: flex;
+  justify-content: space-between; /* Aligns buttons to the left and right */
+  width: 80%; /* Matches the width of the upload-container */
+  margin: 10px auto; /* Spacing above the buttons */
+}
+
+.input-buttons button {
+  flex: 1; /* Each button takes equal space */
+  margin: 0 5px; /* Spacing between buttons */
 }

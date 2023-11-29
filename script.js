@@ -1,38 +1,52 @@
-// Event listener for the image upload input
+// Event listener for image upload
 document.getElementById('image-upload').addEventListener('change', function(event) {
-  // References to the image preview and file name display elements
   const inputImage = document.getElementById('input-preview-image');
   const fileNameDisplay = document.getElementById('file-name');
   const uploadLabel = document.querySelector('.upload-label');
 
-  // Check if a file was selected
   if (event.target.files && event.target.files[0]) {
-    const file = event.target.files[0];
-    const reader = new FileReader();
+      const file = event.target.files[0];
+      const reader = new FileReader();
 
-    // Load the image and update the UI
-    reader.onload = function(e) {
-      inputImage.src = e.target.result; // Set the image source
-      inputImage.style.display = 'block'; // Display the image
-      fileNameDisplay.textContent = file.name; // Show the file name
-      uploadLabel.style.display = 'none'; // Hide the upload label
-    };
+      reader.onload = function(e) {
+          inputImage.src = e.target.result;
+          inputImage.style.display = 'block';
+          fileNameDisplay.textContent = file.name; // Display the file name
+          uploadLabel.style.display = 'none'; // Hide the upload label
+      };
 
-    reader.readAsDataURL(file); // Read the file
+      reader.readAsDataURL(file);
   }
 });
 
 // Event listener for the download button
 document.getElementById('download-btn').addEventListener('click', function() {
   const outputImage = document.getElementById('output-preview-image');
-
-  // Check if there's an image to download
   if (outputImage.src) {
-    const link = document.createElement('a');
-    link.href = outputImage.src; // Set the download URL
-    link.download = 'processed-image.png'; // Set the file name
-    link.click(); // Trigger the download
+      const link = document.createElement('a');
+      link.href = outputImage.src;
+      link.download = 'processed-image.png';
+      link.click();
   } else {
-    alert("No image to download."); // Alert if no image
+      alert("No image to download.");
   }
+});
+
+// Reset button functionality
+document.getElementById('reset-btn').addEventListener('click', function() {
+  // Clear the image preview
+  const inputImage = document.getElementById('input-preview-image');
+  inputImage.style.display = 'none';
+  inputImage.src = '';
+
+  // Reset the file input
+  document.getElementById('image-upload').value = '';
+
+  // Hide the file name display and clear its content
+  const fileNameDisplay = document.getElementById('file-name');
+  fileNameDisplay.textContent = '';
+
+  // Show the upload label again
+  const uploadLabel = document.querySelector('.upload-label');
+  uploadLabel.style.display = 'inline-block';
 });
