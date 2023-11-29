@@ -72,6 +72,8 @@ body {
   text-align: center; /* Center aligning text */
   width: 80%; /* Setting width */
   margin: 10px auto; /* Centered margin */
+  height: 350px; /* Fixed height for the container */
+  position: relative; /* Enables absolute positioning for its children */
 }
 
 /* Styles for the upload box */
@@ -83,7 +85,11 @@ body {
   flex-direction: column; /* Children in a column */
   align-items: center; /* Center aligning items */
   justify-content: center; /* Center justifying items */
-  position: relative; /* Relative position for positioning children */
+  position: absolute; /* Absolute positioning */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Full width of its container */
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
 }
 
@@ -109,10 +115,14 @@ body {
 
 /* Styles for buttons in the input section */
 .input-buttons {
+  position: absolute; /* Absolute positioning */
+  bottom: 10px; /* Positioned at the bottom of the container */
+  left: 50%;
+  transform: translateX(-50%);
   display: flex; /* Using flexbox */
   justify-content: space-between; /* Spacing items evenly */
   width: 80%; /* Width relative to its container */
-  margin: 10px auto; /* Centered margin */
+  margin: 0 auto; /* Centered horizontally */
 }
 
 /* Individual button styles in the input section */
@@ -130,6 +140,11 @@ body {
   max-width: 100%; /* Maximum width */
   max-height: 100%; /* Maximum height */
   object-fit: contain; /* Fit the object without distortion */
+  display: none; /* Hidden by default */
+  position: absolute; /* Absolute positioning */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Styles for action buttons in the output section */
@@ -139,7 +154,7 @@ body {
   width: 80%; /* Width relative to its container */
   margin: 10px auto; /* Centered margin */
   position: absolute; /* Absolute position */
-  bottom: 20px; /* Position from the bottom */
+  bottom: 1px; /* Position from the bottom */
   left: 50%; /* Position from the left */
   transform: translateX(-50%); /* Centering horizontally */
 }
