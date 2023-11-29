@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative; /* Added for absolute positioning of children */
+  position: relative;
 }
 
 .image-section h2 {
@@ -37,8 +37,8 @@ img {
 }
 
 /* Styles for the buttons in both sections */
-.image-section .buttons {
-  position: absolute; /* Absolute position the buttons */
+.image-section .buttons, #input-section input[type="file"] {
+  position: absolute; /* Absolute position the buttons and file input */
   bottom: 10px; /* Position at the bottom */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust for center alignment */
