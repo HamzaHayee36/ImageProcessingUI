@@ -1,33 +1,40 @@
 body {
   font-family: Arial, sans-serif;
 }
+
 .container {
-  display: flex; /* Use flexbox layout */
+  display: flex;
   margin: 20px;
-  height: calc(100vh - 40px); /* Set the height of the container */
+  height: calc(100vh - 40px);
 }
 
 .image-section {
-  flex: 1; /* Each section will take up equal space */
+  flex: 1;
   border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
-  overflow: hidden; /* Hide overflow */
+  overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-start; /* Align children to the start */
+}
+
+.image-section h2 {
+  width: 100%;
+  margin-top: 0; /* Remove the top margin from the title */
 }
 
 img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* This will ensure the image fits within the container */
+  object-fit: contain;
 }
 
 .buttons {
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
+  width: 100%; /* Ensure buttons take full width of the section */
 }
 
 button {
