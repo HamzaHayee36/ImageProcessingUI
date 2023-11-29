@@ -48,6 +48,23 @@ body {
   font-size: 1.2em;
 }
 
+.Output-label {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 40px;
+  margin-bottom: 40px; /* Space below the .Output-label */
+}
+
+.Output-label button {
+  flex: 1;
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+
 /* Container for upload box and file name display */
 .upload-container {
   text-align: center;
