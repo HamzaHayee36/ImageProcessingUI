@@ -12,7 +12,7 @@ body {
   overflow: hidden;
 }
 
-.image-section {
+.section {
   flex: 1;
   border: 1px solid #ddd;
   padding: 10px;
@@ -24,24 +24,23 @@ body {
   position: relative;
 }
 
-/* Unified styles for h2 and h3 headings in both sections */
-.image-section h2, .image-section h3 {
+.section h2, .section h3 {
   position: absolute;
   top: 0;
   width: 100%;
   text-align: center;
-  margin-top: 10px; /* Adjust top margin */
-  font-size: 1.5em; /* Adjust font size if needed */
+  margin-top: 10px;
+  font-size: 1.5em;
 }
 
-img {
+#input-preview-image, #output-preview-image {
   max-width: 70%;
   max-height: 70%;
   object-fit: contain;
+  margin-top: 20px; /* Adjust this to reduce/increase space */
 }
 
-/* Styles for the buttons in both sections */
-.image-section .buttons, #input-section input[type="file"] {
+.action-buttons, #input-section input[type="file"] {
   position: absolute; /* Absolute position the buttons and file input */
   bottom: 10px; /* Position at the bottom */
   left: 50%; /* Center horizontally */
