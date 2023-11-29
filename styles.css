@@ -16,7 +16,6 @@ body {
   margin: 20px;
   height: calc(100vh - 40px);
   overflow: hidden;
-
 }
 
 /* Styles for both input and output sections */
@@ -32,21 +31,28 @@ body {
   position: relative;
 }
 
-/* Styling for section headings */
-.section h2, .section h3 {
-  margin-top: 10px;
-  font-size: 2.5em;
-  color: white; /* White text color for h2 and h3 */
-  font-weight: 800; /* Increase font weight for a bolder appearance */
-  font-family: "Your Bold Font", Arial, sans-serif; /* Specify a bold font */
+/* Container for the input label at the top */
+.Input-label {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 40px;
+  margin-bottom: 40px; /* Space below the .Input-label */
+}
 
+.Input-label button {
+  flex: 1;
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  font-size: 1.2em;
 }
 
 /* Container for upload box and file name display */
 .upload-container {
   text-align: center;
   width: 80%;
-  margin: 20px auto;
+  margin: 10px auto; /* Adjusted margin for spacing */
 }
 
 /* Styles for the upload box */
@@ -60,7 +66,6 @@ body {
   justify-content: center;
   position: relative;
   background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
-
 }
 
 /* Styling for the upload label */
@@ -89,7 +94,6 @@ body {
   justify-content: space-between; /* Aligns buttons to the left and right */
   width: 80%; /* Matches the width of the upload-container */
   margin: 10px auto; /* Spacing above the buttons */
-
 }
 
 .input-buttons button {
@@ -99,7 +103,6 @@ body {
   color: white;
   font-weight: 800;
   font-size: 1.2em;
-
 }
 
 /* Styles for image preview in input and output sections */
@@ -116,7 +119,7 @@ body {
   width: 80%; /* Matches the width of the upload-container */
   margin: 10px auto; /* Spacing above the buttons */
   position: absolute; /* Ensuring position is maintained */
-  bottom: 10px; /* Position at the bottom */
+  bottom: 20px; /* Position at the bottom */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -128,7 +131,6 @@ body {
   color: white;
   font-weight: 800;
   font-size: 1.2em;
-
 }
 
 /* Button styling */
