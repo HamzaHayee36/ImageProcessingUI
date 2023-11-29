@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Image Processing UI</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing UI</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="container">
-  <div class="section image-input-section" id="input-section">
-    <h2>Input</h2>
-    <img id="input-preview-image" style="display: none;">
-    <input type="file" id="image-upload" />
-  </div>
-  <div class="section image-output-section" id="output-section">
-    <h3>Output</h3>
-    <img id="output-preview-image">
-    <div class="action-buttons">
-      <button id="share-btn">Share</button>
-      <button id="download-btn">Download</button>
+    <div class="section image-input-section" id="input-section">
+        <h2>Input</h2>
+        <div class="upload-box">
+            <label for="image-upload" class="upload-label">Upload Picture</label>
+            <input type="file" id="image-upload" />
+        </div>
+        <img id="input-preview-image" style="display: none;">
     </div>
-  </div>
+    <div class="section image-output-section" id="output-section">
+        <h3>Output</h3>
+        <img id="output-preview-image">
+        <div class="action-buttons">
+            <button id="share-btn">Share</button>
+            <button id="download-btn">Download</button>
+        </div>
+    </div>
 </div>
 
 <script src="script.js"></script>

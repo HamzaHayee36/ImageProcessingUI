@@ -19,16 +19,12 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Align items to the start */
   align-items: center;
   position: relative;
 }
 
 .section h2, .section h3 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  text-align: center;
   margin-top: 10px;
   font-size: 1.5em;
 }
@@ -37,14 +33,33 @@ body {
   max-width: 70%;
   max-height: 70%;
   object-fit: contain;
-  margin-top: 20px; /* Adjust this to reduce/increase space */
+  margin-top: 15px; /* Slightly reduced space */
+}
+
+.upload-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  width: 80%;
+  height: 150px;
+  margin: 20px auto;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+}
+
+.upload-label {
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px; /* Space between label and file input */
 }
 
 .action-buttons, #input-section input[type="file"] {
-  position: absolute; /* Absolute position the buttons and file input */
-  bottom: 10px; /* Position at the bottom */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for center alignment */
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
 }
