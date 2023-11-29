@@ -42,22 +42,26 @@ body {
   text-align: center;
   width: 80%;
   height: 300px;
-  /* margin: 20px auto; */
-  display: flex; /* Use flexbox for alignment */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center children horizontally */
-  justify-content: center; /* Center children vertically */
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent); /* Diagonal lines pattern */
+  background-size: 20px 20px; /* Size of the pattern */
 }
 
 .upload-label {
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 5px; /* Space between label and file input */
-  display: inline-block; /* Make label inline for better alignment */
-  background-color: #f0f0f0; /* Optional: background color for the label */
-  padding: 5px 10px; /* Optional: padding for the label */
-  border: 1px solid #ddd; /* Optional: border for the label */
+  margin-bottom: 5px;
+  display: inline-block;
+  background-color: #fff; /* Solid background color for label */
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  z-index: 1; /* Make sure the label is above the lines */
 }
+
 
 .action-buttons, #input-section input[type="file"] {
   position: absolute;
