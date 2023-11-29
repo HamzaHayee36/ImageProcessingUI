@@ -39,8 +39,9 @@ body {
 .upload-container {
   text-align: center;
   width: 80%;
-  margin: auto;
+  margin: 20px auto; /* Adjusted top margin */
 }
+
 
 .upload-box {
   border: 1px solid #ddd;
@@ -66,7 +67,7 @@ body {
 
 #file-name {
   text-align: left; /* Aligns the file name to the left */
-  margin-top: 10px; /* Space below the upload box */
+  margin-top: 5px; /* Reduced space below the upload box */
 }
 
 .action-buttons, #input-section input[type="file"] {
