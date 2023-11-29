@@ -78,19 +78,20 @@ body {
 }
 
 /* Styles for action buttons in the output section */
-.output-buttons, #input-section input[type="file"] {
-  position: absolute;
-  bottom: 10px;
+.output-buttons {
+  display: flex;
+  justify-content: space-between; /* Aligns buttons to the left and right */
+  width: 80%; /* Matches the width of the upload-container */
+  margin: 10px auto; /* Spacing above the buttons */
+  position: absolute; /* Ensuring position is maintained */
+  bottom: 10px; /* Position at the bottom */
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
 }
 
-/* Button styling */
-button {
-  padding: 5px 10px;
-  margin: 0 5px;
+.output-buttons button {
+  flex: 1; /* Each button takes equal space */
+  margin: 0 5px; /* Spacing between buttons */
 }
 
 /* Styles for the input section buttons */
@@ -104,4 +105,10 @@ button {
 .input-buttons button {
   flex: 1; /* Each button takes equal space */
   margin: 0 5px; /* Spacing between buttons */
+}
+
+/* Button styling */
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
 }
