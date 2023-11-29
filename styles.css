@@ -1,15 +1,15 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  overflow: hidden; /* Hide overflow at the body level */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .container {
   display: flex;
   margin: 20px;
-  height: calc(100vh - 40px); /* Adjust height to account for margins */
-  overflow: hidden; /* Hide overflow inside the container */
+  height: calc(100vh - 40px);
+  overflow: hidden;
 }
 
 .image-section {
@@ -21,12 +21,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Hide overflow inside each image section */
+  overflow: hidden;
 }
 
 .image-section h2 {
-  position: absolute; /* Absolute position the title */
-  top: 10px; /* Adjust the position of the title */
+  position: absolute;
+  top: 10px;
   width: 100%;
 }
 
@@ -36,12 +36,12 @@ img {
   object-fit: contain;
 }
 
-.buttons {
-  position: absolute; /* Absolute position the buttons */
-  bottom: 10px; /* Adjust the position of the buttons */
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+/* Adjusting button styles for output section */
+#output-section .buttons {
+  position: static; /* Change from absolute to static */
+  margin-top: 10px; /* Add some space above the buttons */
+  width: auto;
+  justify-content: center;
 }
 
 button {
