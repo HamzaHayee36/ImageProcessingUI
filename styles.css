@@ -33,13 +33,6 @@ body {
   font-size: 1.5em;
 }
 
-/* Styles for image preview in input and output sections */
-#input-preview-image, #output-preview-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
 /* Container for upload box and file name display */
 .upload-container {
   text-align: center;
@@ -77,6 +70,26 @@ body {
   margin-top: 5px; /* Space below the upload box */
 }
 
+/* Styles for the input section buttons */
+.input-buttons {
+  display: flex;
+  justify-content: space-between; /* Aligns buttons to the left and right */
+  width: 80%; /* Matches the width of the upload-container */
+  margin: 10px auto; /* Spacing above the buttons */
+}
+
+.input-buttons button {
+  flex: 1; /* Each button takes equal space */
+  margin: 0 5px; /* Spacing between buttons */
+}
+
+/* Styles for image preview in input and output sections */
+#input-preview-image, #output-preview-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 /* Styles for action buttons in the output section */
 .output-buttons {
   display: flex;
@@ -90,19 +103,6 @@ body {
 }
 
 .output-buttons button {
-  flex: 1; /* Each button takes equal space */
-  margin: 0 5px; /* Spacing between buttons */
-}
-
-/* Styles for the input section buttons */
-.input-buttons {
-  display: flex;
-  justify-content: space-between; /* Aligns buttons to the left and right */
-  width: 80%; /* Matches the width of the upload-container */
-  margin: 10px auto; /* Spacing above the buttons */
-}
-
-.input-buttons button {
   flex: 1; /* Each button takes equal space */
   margin: 0 5px; /* Spacing between buttons */
 }
