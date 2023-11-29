@@ -29,28 +29,29 @@ body {
   font-size: 1.5em;
 }
 
-#input-preview-image {
-  width: 100%;
-  height: auto;
+#input-preview-image, #output-preview-image {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
-  display: none;
+  /* margin-top: 15px; */
+}
+
+.upload-container {
+  text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
 .upload-box {
   border: 1px solid #ddd;
   padding: 10px;
-  text-align: center;
-  width: 80%;
-  height: 300px; /* Set a fixed height */
-  margin: 20px auto;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden; /* Ensure content doesn't overflow */
 }
-
 
 .upload-label {
   font-weight: bold;
@@ -64,16 +65,10 @@ body {
 }
 
 #file-name {
-  text-align: center;
-  margin-top: 10px;
+  text-align: left; /* Aligns the file name to the left */
+  margin-top: 10px; /* Space below the upload box */
 }
 
-#input-preview-image {
-  max-width: 100%; /* Image will not exceed the width of the container */
-  max-height: 100%; /* Image will not exceed the height of the container */
-  object-fit: contain; /* Image will be scaled to maintain its aspect ratio */
-  display: none;
-}
 .action-buttons, #input-section input[type="file"] {
   position: absolute;
   bottom: 10px;
