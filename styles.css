@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  position: relative; /* Added for absolute positioning of children */
 }
 
 .image-section h2 {
@@ -36,11 +36,13 @@ img {
   object-fit: contain;
 }
 
-/* Adjusting button styles for output section */
-#output-section .buttons {
-  position: static; /* Change from absolute to static */
-  margin-top: 10px; /* Add some space above the buttons */
-  width: auto;
+/* Styles for the buttons in both sections */
+.image-section .buttons {
+  position: absolute; /* Absolute position the buttons */
+  bottom: 10px; /* Position at the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for center alignment */
+  display: flex;
   justify-content: center;
 }
 
