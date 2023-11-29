@@ -1,3 +1,4 @@
+/* Base styles for the page */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,6 +6,7 @@ body {
   overflow: hidden;
 }
 
+/* Flex container to hold the input and output sections */
 .container {
   display: flex;
   margin: 20px;
@@ -12,6 +14,7 @@ body {
   overflow: hidden;
 }
 
+/* Styles for both input and output sections */
 .section {
   flex: 1;
   border: 1px solid #ddd;
@@ -24,25 +27,27 @@ body {
   position: relative;
 }
 
+/* Styling for section headings */
 .section h2, .section h3 {
   margin-top: 10px;
   font-size: 1.5em;
 }
 
+/* Styles for image preview in input and output sections */
 #input-preview-image, #output-preview-image {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  /* margin-top: 15px; */
 }
 
+/* Container for upload box and file name display */
 .upload-container {
   text-align: center;
   width: 80%;
-  margin: 20px auto; /* Adjusted top margin */
+  margin: 20px auto;
 }
 
-
+/* Styles for the upload box */
 .upload-box {
   border: 1px solid #ddd;
   padding: 10px;
@@ -54,6 +59,7 @@ body {
   position: relative;
 }
 
+/* Styling for the upload label */
 .upload-label {
   font-weight: bold;
   cursor: pointer;
@@ -65,11 +71,13 @@ body {
   z-index: 1;
 }
 
+/* Styles for displaying the file name */
 #file-name {
   text-align: left; /* Aligns the file name to the left */
-  margin-top: 5px; /* Reduced space below the upload box */
+  margin-top: 5px; /* Space below the upload box */
 }
 
+/* Styles for action buttons in the output section */
 .action-buttons, #input-section input[type="file"] {
   position: absolute;
   bottom: 10px;
@@ -79,6 +87,7 @@ body {
   justify-content: center;
 }
 
+/* Button styling */
 button {
   padding: 5px 10px;
   margin: 0 5px;
