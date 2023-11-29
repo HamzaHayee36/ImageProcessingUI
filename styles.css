@@ -2,24 +2,34 @@ body {
   font-family: Arial, sans-serif;
 }
 .container {
-  display: flex;
-  justify-content: space-around;
+  display: flex; /* Use flexbox layout */
   margin: 20px;
+  height: calc(100vh - 40px); /* Set the height of the container */
 }
+
 .image-section {
+  flex: 1; /* Each section will take up equal space */
   border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
+  overflow: hidden; /* Hide overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 img {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  object-fit: contain; /* This will ensure the image fits within the container */
 }
+
 .buttons {
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
 }
+
 button {
   padding: 5px 10px;
   margin: 0 5px;
