@@ -36,7 +36,7 @@ body {
   display: flex; /* Using flexbox */
   justify-content: space-between; /* Spacing items evenly */
   width: 80%; /* Width relative to its container */
-  margin-top: 40px; /* Top margin */
+  margin-top: 20px; /* Top margin */
   margin-bottom: 40px; /* Bottom margin */
 }
 
@@ -54,7 +54,7 @@ body {
   display: flex; /* Using flexbox */
   justify-content: space-between; /* Spacing items evenly */
   width: 80%; /* Width relative to its container */
-  margin-top: 40px; /* Top margin */
+  margin-top: 20px; /* Top margin */
   margin-bottom: 40px; /* Bottom margin */
 }
 
@@ -123,6 +123,7 @@ body {
   justify-content: space-between; /* Spacing items evenly */
   width: 80%; /* Width relative to its container */
   margin: 0 auto; /* Centered horizontally */
+  margin-bottom: 20px;
 }
 
 /* Individual button styles in the input section */
@@ -154,7 +155,7 @@ body {
   width: 80%; /* Width relative to its container */
   margin: 10px auto; /* Centered margin */
   position: absolute; /* Absolute position */
-  bottom: 1px; /* Position from the bottom */
+  bottom: 20px; /* Position from the bottom */
   left: 50%; /* Position from the left */
   transform: translateX(-50%); /* Centering horizontally */
 }
