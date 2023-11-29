@@ -5,7 +5,7 @@ body {
 .container {
   display: flex;
   margin: 20px;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 40px); /* Full height minus margins */
 }
 
 .image-section {
@@ -16,25 +16,28 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column; /* Stack children vertically */
-  justify-content: flex-start; /* Align children to the start */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
 }
 
 .image-section h2 {
+  position: absolute; /* Absolute position the title */
+  top: 10px; /* Adjust the position of the title */
   width: 100%;
-  margin-top: 0; /* Remove the top margin from the title */
 }
 
 img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 70%;
+  max-height: 70%;
   object-fit: contain;
 }
 
 .buttons {
-  margin-top: 10px;
+  position: absolute; /* Absolute position the buttons */
+  bottom: 10px; /* Adjust the position of the buttons */
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%; /* Ensure buttons take full width of the section */
 }
 
 button {
