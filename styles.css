@@ -1,11 +1,15 @@
 body {
   font-family: Arial, sans-serif;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow: hidden; /* Hide overflow at the body level */
 }
 
 .container {
   display: flex;
   margin: 20px;
-  height: calc(100vh - 40px); /* Full height minus margins */
+  height: calc(100vh - 40px); /* Adjust height to account for margins */
+  overflow: hidden; /* Hide overflow inside the container */
 }
 
 .image-section {
@@ -13,11 +17,11 @@ body {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
-  overflow: hidden;
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center children vertically */
-  align-items: center; /* Center children horizontally */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow inside each image section */
 }
 
 .image-section h2 {
